@@ -1,17 +1,16 @@
 import React from 'react';
 import GlobalStyle from './assets/styles/global';
-import { socket } from './service/web-socket';
 import { BrowserRouter } from 'react-router-dom';
+
 import Routes from './routes';
+import AppProvider from './store/index';
 
 function App() {
-  React.useEffect(() => {
-    socket.on('connect', client => console.log('conectei', client));
-  }, [socket]);
-
   return (
     <BrowserRouter>
-      <Routes />
+      <AppProvider>
+        <Routes />
+      </AppProvider>
       <GlobalStyle />
     </BrowserRouter>
   );

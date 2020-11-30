@@ -1,12 +1,11 @@
 {
   "env": {
     "browser": true,
-    "es2021": true
+    "es2015": true
   },
   "extends": [
-    "plugin:react/recommended",
     "airbnb",
-    "plugin:prettier/recommended"
+    "prettier/react"
   ],
   "parserOptions": {
     "ecmaFeatures": {
@@ -19,9 +18,9 @@
   "rules": {
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
-    "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
+    "react/jsx-filename-extension": [1, { "extensions": [".jsx"] }],
     "import/prefer-default-export": "off",
     "camelcase": "off",
-    "prettier/prettier": "error"
+    "linebreak-style": ["error", "windows"]
   }
 }

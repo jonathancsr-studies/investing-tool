@@ -6,6 +6,7 @@ import Routes from './routes';
 import AppProvider from './store/index';
 
 function App() {
+
   return (
     <BrowserRouter>
       <AppProvider>

@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { useQuotes } from '../../store/quotes';
+import Header from '../../components/Header/Header';
 
 const Home = () => {
   const { fetchQuoteValue } = useQuotes();
@@ -11,8 +12,8 @@ const Home = () => {
 
   return (
     <div>
-      <h1>Home</h1>
-      <h2>Vamo la</h2>
+      <Header/>
+
     </div>
   );
 };

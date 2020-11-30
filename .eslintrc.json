@@ -3,10 +3,7 @@
     "browser": true,
     "es2015": true
   },
-  "extends": [
-    "airbnb",
-    "prettier/react"
-  ],
+  "extends": ["airbnb", "prettier/react"],
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
@@ -21,6 +18,7 @@
     "react/jsx-filename-extension": [1, { "extensions": [".jsx"] }],
     "import/prefer-default-export": "off",
     "camelcase": "off",
-    "linebreak-style": ["error", "windows"]
+    "linebreak-style": ["error", "windows"],
+    "react/prop-types": "off"
   }
 }

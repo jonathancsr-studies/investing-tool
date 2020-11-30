@@ -4,12 +4,13 @@ import {
   Container, Title, Order, Button,
 } from './style';
 
-const HomeOptions = ({ handleOrder }) => (
+const HomeOptions = ({ handleOrder, order }) => (
     <Container>
       <Title>Explore o mercado</Title>
       <Order>
-        <Button onClick={handleOrder('alta')}>Em Alta</Button>
-        <Button onClick={handleOrder('baixa')}>Em Baixa</Button>
+        <p>Ordenar:</p>
+        <Button selected={order === 'alta'} onClick={handleOrder('alta')}>Em Alta</Button>
+        <Button selected={order === 'baixa'} onClick={handleOrder('baixa')}>Em Baixa</Button>
       </Order>
     </Container>
 );
